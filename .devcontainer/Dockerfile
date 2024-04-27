@@ -1,5 +1,5 @@
 #
-# Copyright © 2023 inpyjama.com. All Rights Reserved.
+# Copyright © 2024 inpyjama.com. All Rights Reserved.
 # Author: Piyush Itankar <piyush@inpyjama.com>
 #
 
@@ -28,7 +28,7 @@ RUN sudo apt-get install --no-install-recommends -y \
   binutils \
   make \
   zsh \
-  xxd 
+  xxd
 
 # terminal colors with xterm
 ENV TERM xterm
