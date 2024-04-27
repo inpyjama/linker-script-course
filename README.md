@@ -4,9 +4,7 @@ The code provided as part of this repository is ONLY for learning purposes!
 
 # Course Information
 
-This course is focused on learning (hands-on) the linker script language/commands. We use the `gcc-arm-none-eabi` toolchain as the cross compiler to achieve our goals.
-
-<button href="https://learn.inpyjama.com/web/checkout/662c9c501f561550baf45923">Get the Course Access</button>
+This course is focused on learning (hands-on) the linker script language/commands. We use the `gcc-arm-none-eabi` toolchain as the cross compiler to achieve our goals. [Get the Course Access](https://learn.inpyjama.com/web/checkout/662c9c501f561550baf45923)
 
 # Instructions
 
