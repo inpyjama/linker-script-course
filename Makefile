@@ -16,7 +16,7 @@ LD_MAP      = $(TARGET).map
 READELF_OUT = $(TARGET).txt
 
 # object files our exploration depends on
-OBJ = main.o
+OBJ = main.o globals.o
 
 # this is executed on running `make`
 all: $(READELF_OUT)
@@ -28,7 +28,7 @@ $(READELF_OUT): $(TARGET).elf
 
 # output file
 main.elf: $(OBJ) $(LD_SCRIPT)
-	$(LD) -s -Bsymbolic -gc-sections -T$(LD_SCRIPT) -static -Map=$(LD_MAP) -o $@ $(OBJ)
+	$(LD) -T$(LD_SCRIPT) -static -Map=$(LD_MAP) -o $@ $(OBJ)
 
 %.o: %.c
 	$(GCC) -Wall -nostdlib -fno-builtin -ffreestanding -c $<
